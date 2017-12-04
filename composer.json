@@ -1,0 +1,22 @@
+{
+    "name": "aligent/orocommerce-australia-bundle",
+    "description": "Australian Tax Rules for OroCommerce",
+    "homepage": "https://github.com/aligent/orocommerce-australia-bundle",
+    "keywords": ["Oro", "OroCommerce", "Australia", "Tax", "GST"],
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Jim O'Halloran",
+            "email": "jim@aligent.com.au",
+            "homepage": "http://www.aligent.com.au/"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "oro/commerce": "1.4.*"
+    },
+    "autoload": {
+        "psr-4": { "Aligent\\AustraliaBundle\\": "./src/" },
+        "exclude-from-classmap": ["sec/Tests/"]
+    }
+}
