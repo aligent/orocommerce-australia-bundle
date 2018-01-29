@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "oro/commerce": "1.4.*"
+        "oro/commerce": "1.*"
     },
     "autoload": {
         "psr-4": { "Aligent\\AustraliaBundle\\": "./src/" },
