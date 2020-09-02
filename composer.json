@@ -4,6 +4,7 @@
     "homepage": "https://github.com/aligent/orocommerce-australia-bundle",
     "keywords": ["Oro", "OroCommerce", "Australia", "Tax", "GST"],
     "license": "OSL-3.0",
+    "version": "4.1",
     "authors": [
         {
             "name": "Jim O'Halloran",
@@ -13,7 +14,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "oro/commerce": ">=1"
+        "oro/commerce": ">=4.1.*"
     },
     "autoload": {
         "psr-4": { "Aligent\\AustraliaBundle\\": "./src/" },
