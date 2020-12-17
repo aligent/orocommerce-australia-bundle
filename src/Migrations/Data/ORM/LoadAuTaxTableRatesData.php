@@ -91,8 +91,9 @@ class LoadAuTaxTableRatesData extends AbstractFixture implements ContainerAwareI
      */
     private function loadProductTaxCodes(ObjectManager $manager, $productTaxCodes)
     {
+        $org = $this->getAdminUser($manager)->getOrganization();
         foreach ($productTaxCodes as $code => $data) {
-            $taxCode = $this->entitiesFactory->createProductTaxCode($code, $data['description'], $manager, $this);
+            $taxCode = $this->entitiesFactory->createProductTaxCode($code, $data['description'], $org, $manager, $this);
         }
 
         return $this;
